@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.navContainer {
+    background-color: rgb(136, 136, 136);
+    padding: 1rem;
+}
+.navList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 14rem;
+}
+.navList li {
+    padding: 1rem;
+}
+.navList, a{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 2rem;
+    color: white;
+}
+.navList li:hover {
+    background-color: rgb(179, 179, 179);
+}
