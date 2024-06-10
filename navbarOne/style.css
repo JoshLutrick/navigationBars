@@ -5,6 +5,14 @@
 .navContainer {
     background-color: rgb(136, 136, 136);
     padding: 1rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.fa-bars {
+    font-size: 3rem;
+    margin: 1rem;
 }
 .navList {
     display: flex;
