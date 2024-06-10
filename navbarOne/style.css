@@ -9,10 +9,14 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    z-index: 0;
 }
 .fa-bars {
     font-size: 3rem;
     margin: 1rem;
+    position: fixed;
+    z-index: 80000;
+    color: white;
 }
 .navList {
     display: flex;
@@ -23,6 +27,7 @@
 }
 .navList li {
     padding: 1rem;
+    width: 23rem;
 }
 .navList, a{
     text-decoration: none;
@@ -32,4 +37,10 @@
 }
 .navList li:hover {
     background-color: rgb(179, 179, 179);
+}
+.hideNav {
+    top: -22rem;
+}
+.showNav {
+    top: 0;
 }
