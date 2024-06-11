@@ -9,14 +9,32 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    z-index: 0;
+    position: fixed;
+    transition: .5s;
+    top: -22rem;
+    z-index: 1;
+}
+.navContainerDiv {
+    background-color: rgb(98, 98, 98);
+    width: 100%;
+    height: 5rem;
+    z-index: 7999;
 }
 .fa-bars {
     font-size: 3rem;
     margin: 1rem;
     position: fixed;
     z-index: 80000;
-    color: white;
+    color: rgb(255, 255, 255);
+}
+.fa-x {
+    font-size: 3rem;
+    margin: 1rem;
+    position: fixed;
+    z-index: 80000;
+    color: rgb(255, 255, 255);
+    transform: scaleX(3rem);
+    transition: .3s;
 }
 .navList {
     display: flex;
@@ -27,20 +45,23 @@
 }
 .navList li {
     padding: 1rem;
+    z-index: 1;
     width: 23rem;
 }
 .navList, a{
     text-decoration: none;
     list-style-type: none;
     font-size: 2rem;
+    z-index: 1;
     color: white;
 }
 .navList li:hover {
     background-color: rgb(179, 179, 179);
 }
-.hideNav {
-    top: -22rem;
-}
 .showNav {
-    top: 0;
+    position: fixed;
+    top: 0rem;
+    z-index: 0;
+    transform: translateY(0rem);
+    transition: .5s;
 }
